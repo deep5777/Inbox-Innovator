@@ -35,6 +35,7 @@ const Write = () => {
     await getEmails({ newsLetterOwnerId: user?.id! })
       .then((res) => {
         setEmails(res);
+        console.log("Emails:", res);
       })
       .catch((error) => {
         console.log(error);
